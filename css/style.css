@@ -10,11 +10,19 @@ body {
     font-family: 'Gentium Book Plus';
 }
 
-
+@keyframes animacion {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .menu {
     color: white;
-    background-color: black;
+    background: radial-gradient(at center, #650616, #180a0a);
 }
 
 .menu-info .navs {
@@ -29,7 +37,8 @@ body {
 .logo-principal img {
     border-radius: 100px;
     margin: 5px;
-    
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 
 .navs:hover {
