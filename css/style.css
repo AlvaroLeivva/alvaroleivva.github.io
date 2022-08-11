@@ -10,6 +10,7 @@ body {
     font-family: 'Gentium Book Plus';
 }
 
+
 @keyframes animacion {
     
     0%{
@@ -20,44 +21,16 @@ body {
     }
 }
 
-.menu {
-    color: white;
-    background: radial-gradient(at center, #650616, #180a0a);
-}
-
-.menu-info .navs {
-    color: white;
-    text-decoration: none;
-}
-
-.menu-info {
-    display: flex;
+header nav{
+    background: radial-gradient(at bottom, #650616, #180a0a);
+    font-size: 20px;
 }
 
 .logo-principal img {
     border-radius: 100px;
     margin: 5px;
     animation-name: animacion;
-    animation-duration: 1s;
-}
-
-.navs:hover {
-    opacity: 1;
-}
-.navs{
-    transition: 500ms;
-}
-
-.menu-secciones {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-secciones ul {
-    display: flex;
-    column-gap: 15px;
+    animation-duration: 2s;
 }
 
 .seccion-1 {
@@ -96,8 +69,9 @@ body {
 
 .seccion-1 {
     margin-top: 0px;
+    margin-bottom: 30px;
     background-image: url('../imagenes/harina_fondo_1.jpg');
-    height: 350px;
+    height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -254,7 +228,24 @@ footer a {
     margin-bottom: 10px;
 }
 
-/* Final */
+/* Final seccion contacto */
+
+/* Seccion Registrate */
+
+.titulo-registrate{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario-registrate{
+    margin: auto;  
+   max-width: 900px;
+}
+
+/* Final seccion registrate */
 
 @media (min-width: 730px){
 

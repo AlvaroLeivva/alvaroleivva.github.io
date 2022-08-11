@@ -19,13 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=League+Gothic&display=swap"
         rel="stylesheet">
 
+    <!-- Link Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <header class="menu">
+    <!-- <header class="menu">
         <nav class="menu-info">
 
             <div class="logo-principal">
@@ -44,7 +49,42 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-principal" href="index.html">
+                    <img src="imagenes/logo_pasta.jpg" alt="" width="80" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
+                    
+                    <ul class="navbar-nav mb-2  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="pedir-online.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="registrate.html">Registrate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header> 
 
 
     <section class="seccion-1">
@@ -52,12 +92,14 @@
         <p>Desde nuestros inicios estamos en la continua busqueda de los sabores que traen la esencia italiana en
             cada
             plato.
-        
+
             En la actualidad somos reconocidos por nuestras pastas caseras, por su caracteristico sabor y escencia
             unica.
-            
+
             Somos apasionados por la cocina y por brindarle a cada persona que viene la mejor experiencia gastronomica.
         </p>
+
+        <a href="carta.html" type="button" class="btn btn-outline-light btn-lg mb-30px"> Ver Carta</a>
     </section>
 
     <main>
@@ -74,7 +116,7 @@
                 <div class="text">
                     <p>
                         Realizamos nuestras pastas de manera casera, como las abuelas italianas, con el mismo cariño.
-                        
+
                         Siempre cuidando las cantidades y proporciones para que cada plato tenga el mismo sabor
                         inolvidable tan caracteristico de Il Bambino.
                     </p>
@@ -88,9 +130,9 @@
                 <div class="text ">
                     <p>
                         Siempre estamos en busqueda de las mejores materias primas, buscando los mejores proveedores.
-                        
+
                         Seleccionando nosotros mismos los mejores ingredientes y la mejor calidad para mantener el
-                        
+
                         alto nivel de cocina.
                     </p>
                 </div>
@@ -103,7 +145,7 @@
                 <div class="text">
                     <p>
                         Somos apasionados de la cocina.
-                       
+
                         Disfrutamos lo que hacemos, experimentar con nuevos
                         sabores, ver a nuestros clientes disfrutando los platos que realizamos y que sigan viniendo a
                         compartir momentos inolvidables.
@@ -130,7 +172,7 @@
 
         <div>
             <ul class="locales">
-                <li class="sucursal boedo" >
+                <li class="sucursal boedo">
                     <p>Boedo</p>
                     <p>4208-4220</p>
                 </li>
@@ -171,14 +213,21 @@
 
         <div class="redes">
             <ul>
-                <li><a class="redes" href="https://www.instagram.com/" target="_blank"> <img width="30px" src="imagenes/instagram.png" alt=""></a></li>
-                <li><a class="redes" href="https://www.facebook.com/Facebook" target="_blank"> <img width="25px" src="imagenes/facebook.png" alt=""></a></li>
-                <li><a class="redes" href="https://twitter.com/home" target="_blank"> <img width="25px" src="imagenes/twitter.png" alt=""></a></li>
-                <li><a class="redes" href="https://web.whatsapp.com/" target="_blank"> <img width="25px" src="imagenes/whatsapp.png" alt=""></a></li>
+                <li><a class="redes" href="https://www.instagram.com/" target="_blank"> <img width="30px"
+                            src="imagenes/instagram.png" alt=""></a></li>
+                <li><a class="redes" href="https://www.facebook.com/Facebook" target="_blank"> <img width="25px"
+                            src="imagenes/facebook.png" alt=""></a></li>
+                <li><a class="redes" href="https://twitter.com/home" target="_blank"> <img width="25px"
+                            src="imagenes/twitter.png" alt=""></a></li>
+                <li><a class="redes" href="https://web.whatsapp.com/" target="_blank"> <img width="25px"
+                            src="imagenes/whatsapp.png" alt=""></a></li>
             </ul>
         </div>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
