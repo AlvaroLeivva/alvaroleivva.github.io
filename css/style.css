@@ -12,16 +12,17 @@ body {
 
 
 @keyframes animacion {
-    
-    0%{
+
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-header nav{
+header nav {
     background: radial-gradient(at bottom, #650616, #180a0a);
     font-size: 20px;
 }
@@ -82,10 +83,10 @@ header nav{
     font-size: 30px;
 }
 
-.seccion-mapa{
+.seccion-mapa {
     color: white;
     margin-top: 20px;
-    background-color: rgba(97, 81, 51, 0.806); 
+    background-color: rgba(97, 81, 51, 0.806);
 }
 
 .info {
@@ -132,38 +133,38 @@ header nav{
     margin: auto;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 60px);
     grid-template-areas: 'boedo palermo'
-                         'puerto sant'
-                         'recoleta belgrano'
+        'puerto sant'
+        'recoleta belgrano'
 }
 
 .locales {
     font-size: 16px;
 }
 
-.boedo{
+.boedo {
     grid-area: boedo;
 }
 
-.palermo{
+.palermo {
     grid-area: palermo
 }
 
-.puerto{
+.puerto {
     grid-area: puerto
 }
 
-.sant{
+.sant {
     grid-area: sant
 }
 
-.recoleta{
+.recoleta {
     grid-area: recoleta
 }
 
-.belgrano{
+.belgrano {
     grid-area: belgrano
 }
 
@@ -202,20 +203,20 @@ footer a {
     margin: 5px;
 }
 
-.copy{
+.copy {
     margin-top: 5px;
 }
 
 
 /* Seccion Contacto */
-.contacto{
+.contacto {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.tc{
+.tc {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -224,7 +225,7 @@ footer a {
     margin-top: 20px;
 }
 
-.tc .titulo-c{
+.tc .titulo-c {
     margin-bottom: 10px;
 }
 
@@ -232,7 +233,7 @@ footer a {
 
 /* Seccion Registrate */
 
-.titulo-registrate{
+.titulo-registrate {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -240,66 +241,109 @@ footer a {
     margin-bottom: 20px;
 }
 
-.formulario-registrate{
-    margin: auto;  
-   max-width: 900px;
+.formulario-registrate {
+    margin: auto;
+    max-width: 900px;
 }
 
 /* Final seccion registrate */
 
-@media (min-width: 730px){
+/* Seccion Delivery  */
+
+.titulo-delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.form-pedir {
+    max-width: 470px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-pedir textarea,
+.form-pedir .info-pedido {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.form-pedir .direccion {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: radial-gradient(at center, #650616, #391818);
+}
+
+.form-pedir .info-extra {
+    height: 30px;
+}
+
+.opciones-pedir .boton {
+    margin-top: 10px;
+}
+
+
+/* Fin Seccion Delivery */
+
+@media (min-width: 730px) {
 
     .menu-secciones ul {
         display: flex;
         column-gap: 50px;
     }
 
-    .menu-secciones ul li{
+    .menu-secciones ul li {
         font-size: 18px;
     }
 
-    .menu-info .navs{
+    .menu-info .navs {
         opacity: 0.8;
     }
 
-    .navs:hover{
+    .navs:hover {
         opacity: 1;
     }
 
-    .navs{
+    .navs {
         transition: all 500ms ease-in-out
     }
 
-    .info{
+    .info {
         margin-top: 30px;
     }
 
-    .info .item{
+    .info .item {
         flex-wrap: nowrap;
     }
 
-    .info .img{
-        width: 30%; 
+    .info .img {
+        width: 30%;
     }
 
-    .info .text{
+    .info .text {
         flex: 1;
         text-align: left;
     }
 
-    .impar .text{
+    .impar .text {
         margin-left: 30px;
     }
 
-    .impar .img{
+    .impar .img {
         order: 2;
     }
 
-    .text p{
+    .text p {
         font-size: 18px;
     }
-   
-    .item:hover{
+
+    .item:hover {
         background-color: rgb(218, 213, 213);
     }
 
@@ -313,17 +357,16 @@ footer a {
         height: 580;
     }
 
-    .locales{
-        grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: repeat(2, 60px);
-    grid-template-areas: 'boedo palermo puerto'
-                         'sant recoleta belgrano'
+    .locales {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 60px);
+        grid-template-areas: 'boedo palermo puerto'
+            'sant recoleta belgrano'
     }
 
-    .mapa{
+    .mapa {
         width: 70%;
         height: 460px;
     }
 
 }
-
