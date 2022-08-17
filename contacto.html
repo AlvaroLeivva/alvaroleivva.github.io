@@ -81,13 +81,19 @@
         <section class="contacto">
 
             <div>
-                <form class="formulario-contacto">
-                    <div>
-                        <span>Ingrese su nombre</span>
+                <form class="form-contacto">
+                    <div class="item-contacto">
+                        <span>Ingrese su nombre </span>
                         <input type="text" placeholder="Ej: Juanito">
                     </div>
-                    <div>
-                        <span>Selecciona la sucursal</span>
+                    
+                    <div class="item-contacto">
+                        <span>Ingrese su comentario</span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
+                    </div>
+
+                    <div class="item-contacto">
+                        <span>Selecciona la sucursal </span>
                         <select>
                             <option>Palermo</option>
                             <option>Puerto Madero</option>
@@ -95,13 +101,11 @@
                             <option>Pilar</option>
                         </select>
                     </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
-                    </div>
 
                     <div>
-                        <button type="button" class="btn btn-secondary mt-1">Enviar</button>
+                        <input type="submit" type="button" class="btn btn-outline-light mt-2"></button>
                     </div>
+                    
                 </form>
             </div>
 

@@ -209,12 +209,6 @@ footer a {
 
 
 /* Seccion Contacto */
-.contacto {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    width: 100%;
-}
 
 .tc {
     display: flex;
@@ -227,6 +221,30 @@ footer a {
 
 .tc .titulo-c {
     margin-bottom: 10px;
+}
+
+.form-contacto{
+    color: white;
+    max-width: 470px;
+    margin: auto;
+    background: radial-gradient(at center, #650616, #391818);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-contacto textarea{
+    height: 100px;
+}
+
+.form-contacto textarea,
+.form-contacto input{
+    width: 100%;
+}
+
+.form-contacto .item-contacto{
+    margin-top: 5px;
 }
 
 /* Final seccion contacto */
@@ -263,7 +281,7 @@ footer a {
     max-width: 470px;
     margin: auto;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .form-pedir textarea,
@@ -278,6 +296,7 @@ footer a {
     padding: 10px;
     margin-bottom: 10px;
     background: radial-gradient(at center, #650616, #391818);
+    text-align: center;
 }
 
 .form-pedir .info-extra {
@@ -368,5 +387,17 @@ footer a {
         width: 70%;
         height: 460px;
     }
+
+    /* Delivery */
+    .form-pedir {
+        max-width: 900px;
+    }
+    /* Fin Delivery */
+
+    /* Contacto */
+    .form-contacto{
+        max-width: 900px;
+    }
+    /* Fin Contacto */
 
 }
