@@ -39,23 +39,15 @@ header nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.seccion-1 p {
-    text-align: center;
-}
-
-.seccion-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.seccion-1 * {
     color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background-image: url('../imagenes/harina_fondo_1.jpg');
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-
+    
 .seccion-1 h1 {
     font-family: 'Great Vibes';
     font-size: 50px;
@@ -63,18 +55,16 @@ header nav {
 }
 
 .seccion-1 p {
+    text-align: center;
     font-size: 16px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.seccion-1 {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    background-image: url('../imagenes/harina_fondo_1.jpg');
-    height: 300px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+.seccion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .seccion-2 h2 {
@@ -130,18 +120,15 @@ header nav {
 
 .locales {
     width: 60%;
+    font-size: 16px;
     margin: auto;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 60px);
     grid-template-areas: 'boedo palermo'
-        'puerto sant'
-        'recoleta belgrano'
-}
-
-.locales {
-    font-size: 16px;
+                         'puerto sant'
+                         'recoleta belgrano'
 }
 
 .boedo {
@@ -180,9 +167,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-footer {
     font-family: 'Gentium Book Plus';
     color: white;
     font-size: 16px;
@@ -209,6 +193,10 @@ footer a {
 
 
 /* Seccion Contacto */
+
+.main-contacto{
+    font-size: 18px;
+}
 
 .tc {
     display: flex;

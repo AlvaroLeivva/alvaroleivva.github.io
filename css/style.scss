@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gentium Book Plus';
+}
+
+.seccion-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background-image: url('../imagenes/harina_fondo_1.jpg');
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+        p{
+            text-align: center;
+            font-size: 16px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        h1{
+            font-family: 'Great Vibes';
+            font-size: 50px;
+            color: white;
+            }
+}
+
+.info{
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+    font-size: 16px;
+
+        h2{
+            text-align: center;
+        }
+
+        .item{
+            display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+        /* espacios entre columnas (para elementos hijos) */
+        margin-top: 40px;
+        border-radius: 10px;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .text{
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+}
+
+.seccion-mapa{
+    color: white;
+    margin-top: 20px;
+    background-color: rgba(97, 81, 51, 0.806);
+
+        .locales{
+            width: 60%;
+            font-size: 16px;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 60px);
+            grid-template-areas: 'boedo palermo'
+                                 'puerto sant'
+                                 'recoleta belgrano'
+        }
+
+        .sucursal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }    
+
+                .boedo {
+                    grid-area: boedo;
+                 }
+
+                .palermo {
+                    grid-area: palermo
+                }
+
+                .puerto {
+                    grid-area: puerto
+                }
+
+                .sant {
+                    grid-area: sant
+                }
+
+                .recoleta {
+                    grid-area: recoleta
+                }
+
+                .belgrano {
+                    grid-area: belgrano
+                }
+        }
+
+        .seccion-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            h2{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+
+            .mapa{
+                transition-property: all;
+                transition-duration: 500ms;
+            }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gentium Book Plus';
+    color: white;
+    font-size: 16px;
+    background-color: black;
+
+        .copy {
+            margin-top: 5px;
+        }
+
+        
+
+        .redes{
+            ul{
+                display: flex;
+                margin: 10px;
+            }
+
+            li{
+                margin: 5px;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+}
+
+/* contacto*/
+
+.main-contacto{
+    font-size: 18px;
+
+    .tc {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+            .titulo-c {
+                margin-bottom: 10px;
+            }
+    }
+
+    .form-contacto{
+        color: white;
+        max-width: 470px;
+        margin: auto;
+        background: radial-gradient(at center, #650616, #391818);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+
+            textarea{
+                height: 100px;
+            }
+
+            textarea, input{
+                width: 100%;
+            }
+
+            .item-contacto{
+                margin-top: 5px;
+            }
+            
+    }
+}
+
+/* final contacto */
+
+/* registrate */
+
+.titulo-registrate {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .formulario-registrate {
+        margin: auto;
+        max-width: 900px;
+    }
+}
+
+/* final registrate */
+
+/* pedir online */
+
+.delivery{
+    .titulo-delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px
+    }
+
+    .form-pedir {
+        max-width: 470px;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: left;
+
+        textarea, .info-pedido{
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .direccion {
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: radial-gradient(at center, #650616, #391818);
+            text-align: center;
+        }
+
+        .info-extra {
+            height: 30px;
+
+         }
+    }
+
+    .opciones-pedir{
+        .boton{
+            margin-top: 10px;
+        }
+    }
+}
+
+/* final pedir online */
+
+/* media query (730px) */
+
+@media (min-width: 730px) {
+
+    .menu-secciones{
+        ul {
+            display: flex;
+            column-gap: 50px;
+        }
+    } 
+
+    .menu-secciones{
+        ul{
+            li {
+                font-size: 18px;
+            }
+        } 
+    }    
+
+    .menu-info {
+        .navs {
+            opacity: 0.8;
+        }
+    }
+
+    .navs:hover {
+        opacity: 1;
+    }
+
+    .navs {
+        transition: all 500ms ease-in-out
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .info{ 
+        .item {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .info{ 
+        .img {
+            width: 30%;
+        }
+    }
+
+    .info{
+         .text {
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    .impar{
+         .text {
+            margin-left: 30px;
+       }
+    }
+
+    .impar{ 
+        .img {
+            order: 2;
+        }
+    }
+
+    .text{
+         p {
+            font-size: 18px;
+        }
+    }
+    
+    .item:hover {
+        background-color: rgb(218, 213, 213);
+    }
+
+    .item {
+        transition: all;
+        transition-duration: 1s;
+    }
+
+    .mapa:hover {
+        width: 90%;
+        height: 580;
+    }
+
+    .locales {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 60px);
+        grid-template-areas: 'boedo palermo puerto'
+            'sant recoleta belgrano'
+    }
+
+    .mapa {
+        width: 70%;
+        height: 460px;
+    }
+
+    /* Delivery */
+    .form-pedir {
+        max-width: 900px;
+    }
+    /* Fin Delivery */
+
+    /* Contacto */
+    .form-contacto{
+        max-width: 900px;
+    }
+    /* Fin Contacto */
+
+}
+
+
+
