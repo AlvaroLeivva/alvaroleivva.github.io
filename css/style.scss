@@ -1,3 +1,5 @@
+$color: white;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $color;
     margin-top: 0px;
     margin-bottom: 30px;
     background-image: url('../imagenes/harina_fondo_1.jpg');
@@ -33,7 +35,7 @@ body {
         h1{
             font-family: 'Great Vibes';
             font-size: 50px;
-            color: white;
+            color: $color;
             }
 }
 
@@ -73,7 +75,7 @@ body {
 }
 
 .seccion-mapa{
-    color: white;
+    color: $color;
     margin-top: 20px;
     background-color: rgba(97, 81, 51, 0.806);
 
@@ -145,7 +147,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-family: 'Gentium Book Plus';
-    color: white;
+    color: $color;
     font-size: 16px;
     background-color: black;
 
@@ -165,7 +167,7 @@ footer{
                 margin: 5px;
 
                 a{
-                    color: white;
+                    color: $color;
                     text-decoration: none;
                 }
             }
@@ -191,7 +193,7 @@ footer{
     }
 
     .form-contacto{
-        color: white;
+        color: $color;
         max-width: 470px;
         margin: auto;
         background: radial-gradient(at center, #650616, #391818);
@@ -258,7 +260,7 @@ footer{
         }
 
         .direccion {
-            color: white;
+            color: $color;
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 10px;
