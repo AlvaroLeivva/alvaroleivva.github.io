@@ -1,4 +1,20 @@
 $color: white;
+$res-mobile: 730px;
+
+@mixin fondo{
+    background: radial-gradient(at bottom, #650616, #180a0a);
+}
+
+@keyframes animacion {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 * {
     margin: 0;
@@ -10,6 +26,22 @@ $color: white;
 
 body {
     font-family: 'Gentium Book Plus';
+}
+
+header{
+    nav{
+        @include fondo;
+        font-size: 20px; 
+    }         
+}   
+
+.logo-principal{
+    img{
+        border-radius: 100px;
+    margin: 5px;
+    animation-name: animacion;
+    animation-duration: 2s;
+    }
 }
 
 .seccion-1{
@@ -196,7 +228,7 @@ footer{
         color: $color;
         max-width: 470px;
         margin: auto;
-        background: radial-gradient(at center, #650616, #391818);
+        @include fondo;        
         border-radius: 5px;
         padding: 10px;
         margin-bottom: 10px;
@@ -264,7 +296,7 @@ footer{
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 10px;
-            background: radial-gradient(at center, #650616, #391818);
+            @include fondo;
             text-align: center;
         }
 
@@ -285,7 +317,7 @@ footer{
 
 /* media query (730px) */
 
-@media (min-width: 730px) {
+@media (min-width: $res-mobile) {
 
     .menu-secciones{
         ul {
@@ -308,13 +340,14 @@ footer{
         }
     }
 
-    .navs:hover {
-        opacity: 1;
-    }
-
     .navs {
-        transition: all 500ms ease-in-out
+        transition: all 500ms ease-in-out;
+
+        &:hover{
+            opacity: 1;
+        } 
     }
+    
 
     .info {
         margin-top: 30px;
@@ -357,8 +390,10 @@ footer{
         }
     }
     
-    .item:hover {
-        background-color: rgb(218, 213, 213);
+    .item {
+        &:hover{
+            background-color: rgb(218, 213, 213);
+        }     
     }
 
     .item {
