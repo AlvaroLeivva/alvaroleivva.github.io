@@ -143,6 +143,23 @@ footer {
       color: white;
       text-decoration: none; }
 
+/* carta */
+.body-carta{
+  background:radial-gradient(at center, rgb(26, 25, 25), rgb(59, 57, 57), rgb(119, 118, 118) )
+}
+
+.carta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* final carta */
+
 /* contacto*/
 .main-contacto {
   font-size: 18px; }
