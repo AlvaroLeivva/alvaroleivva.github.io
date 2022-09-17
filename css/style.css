@@ -1,3 +1,9 @@
+@keyframes animacion {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +11,8 @@
   list-style: none;
   text-decoration: none; }
 
-  @keyframes animacion {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 body {
-  font-family: 'Gentium Book Plus'; 
-}
+  font-family: 'Gentium Book Plus'; }
 
 header nav {
   background: radial-gradient(at bottom, #650616, #180a0a);
@@ -89,9 +83,7 @@ header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 60px);
-    grid-template-areas: 'boedo palermo'
- 'puerto sant'
- 'recoleta belgrano'; }
+    grid-template-areas: 'boedo palermo' 'puerto sant' 'recoleta belgrano'; }
   .seccion-mapa .sucursal {
     display: flex;
     flex-direction: column;
@@ -145,21 +137,14 @@ footer {
       text-decoration: none; }
 
 /* carta */
-.body-carta{
-  background:radial-gradient(at center, rgb(26, 25, 25), rgb(59, 57, 57), rgb(119, 118, 118) )
-}
+.body-carta {
+  background: radial-gradient(at center, #252323, #4a4545, #7b7373); }
 
-.carta{
+.carta {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-/* final carta */
+  align-items: center; }
 
 /* contacto*/
 .main-contacto {
@@ -189,87 +174,61 @@ footer {
     .main-contacto .form-contacto .item-contacto {
       margin-top: 5px; }
 
-
-.comentarios{
+.comentarios {
   margin-left: px;
   margin-top: 50px;
-  background-color: azure;
-}
-.comentarios .titulo-comentarios{
+  background-color: azure; }
+
+.titulo-comentarios {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
-.comentario-usuarios .item-c{
+.comentario-usuarios .item-c {
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   margin-top: 10px;
   background-color: rgba(124, 145, 185, 0.258);
   border-radius: 10px;
-  column-gap: 5px;
-}
-
-.item-c .text-c{
-  width: 90%
-  
-}
-
-
-.text-c .nombre{
-    text-decoration: underline;
-  }
-
-.item-c .img-c{
-  border-radius: 10px;
-}
-
-.img-c img{
-  border-radius: 10px;
-  margin: auto;
-}
+  column-gap: 5px; }
+  .comentario-usuarios .item-c .text-c {
+    width: 90%; }
+    .comentario-usuarios .item-c .text-c .nombre {
+      text-decoration: underline; }
+  .comentario-usuarios .item-c .img-c {
+    border-radius: 10px; }
+    .comentario-usuarios .item-c .img-c img {
+      border-radius: 10px;
+      margin: auto; }
 
 /* final contacto */
-
 /* registrate */
 .titulo-registrate {
-  text-align: center;
   display: flex;
   justify-content: center;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px; }
-  .titulo-registrate .formulario-registrate {
-    margin: auto;
-    max-width: 900px; }
+  margin-bottom: 20px; }
 
-.form-registro{
+.form-registro {
   border-radius: 5px;
   background: radial-gradient(at bottom, #650616, #180a0a);
   max-width: 470px;
   margin: auto;
   margin-bottom: 10px;
-  text-align: left;
-}
-
-.form-registro .registro{
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 10px;
-}
-
-.registro .correo{
-  color: white;
-
-}
-
-.registro .correo-e{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
-}
+  text-align: left; }
+  .form-registro .registro {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px; }
+    .form-registro .registro .correo {
+      color: white; }
+    .form-registro .registro .correo-e {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%; }
 
 /* final registrate */
 /* pedir online */
@@ -303,7 +262,6 @@ footer {
   margin-top: 10px; }
 
 /* final pedir online */
-
 /* media query (730px) */
 @media (min-width: 730px) {
   .menu-secciones ul {
@@ -343,8 +301,7 @@ footer {
   .locales {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 60px);
-    grid-template-areas: 'boedo palermo puerto'
- 'sant recoleta belgrano'; }
+    grid-template-areas: 'boedo palermo puerto' 'sant recoleta belgrano'; }
   .mapa {
     width: 70%;
     height: 460px; }
