@@ -222,7 +222,6 @@ footer {
   }
 
 .item-c .img-c{
-  width: 10%
   border-radius: 10px;
 }
 
@@ -231,18 +230,46 @@ footer {
   margin: auto;
 }
 
-
 /* final contacto */
+
 /* registrate */
 .titulo-registrate {
+  text-align: center;
   display: flex;
   justify-content: center;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .titulo-registrate .formulario-registrate {
     margin: auto;
     max-width: 900px; }
+
+.form-registro{
+  border-radius: 5px;
+  background: radial-gradient(at bottom, #650616, #180a0a);
+  max-width: 470px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-registro .registro{
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.registro .correo{
+  color: white;
+
+}
+
+.registro .correo-e{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
 
 /* final registrate */
 /* pedir online */
@@ -276,6 +303,7 @@ footer {
   margin-top: 10px; }
 
 /* final pedir online */
+
 /* media query (730px) */
 @media (min-width: 730px) {
   .menu-secciones ul {
