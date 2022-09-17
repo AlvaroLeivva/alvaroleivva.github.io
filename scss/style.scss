@@ -247,6 +247,21 @@ footer{
             }
             
     }
+
+.comentarios{
+    .titulo-comentarios{
+        display: flex;
+        text-align: end;
+    }
+
+    .comentario-usuarios{
+        .item-c{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
 }
 
 /* final contacto */

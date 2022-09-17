@@ -17,7 +17,8 @@
 }
 
 body {
-  font-family: 'Gentium Book Plus'; }
+  font-family: 'Gentium Book Plus'; 
+}
 
 header nav {
   background: radial-gradient(at bottom, #650616, #180a0a);
@@ -187,6 +188,49 @@ footer {
       width: 100%; }
     .main-contacto .form-contacto .item-contacto {
       margin-top: 5px; }
+
+
+.comentarios{
+  margin-left: px;
+  margin-top: 50px;
+  background-color: azure;
+}
+.comentarios .titulo-comentarios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comentario-usuarios .item-c{
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  background-color: rgba(124, 145, 185, 0.258);
+  border-radius: 10px;
+  column-gap: 5px;
+}
+
+.item-c .text-c{
+  width: 90%
+  
+}
+
+
+.text-c .nombre{
+    text-decoration: underline;
+  }
+
+.item-c .img-c{
+  width: 10%
+  border-radius: 10px;
+}
+
+.img-c img{
+  border-radius: 10px;
+  margin: auto;
+}
+
 
 /* final contacto */
 /* registrate */
