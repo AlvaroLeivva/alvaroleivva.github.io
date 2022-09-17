@@ -83,7 +83,9 @@ header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 60px);
-    grid-template-areas: 'boedo palermo' 'puerto sant' 'recoleta belgrano'; }
+    grid-template-areas: 'boedo palermo'
+ 'puerto sant'
+ 'recoleta belgrano'; }
   .seccion-mapa .sucursal {
     display: flex;
     flex-direction: column;
@@ -148,7 +150,8 @@ footer {
 
 /* contacto*/
 .main-contacto {
-  font-size: 18px; }
+  font-size: 18px; 
+background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934), white);}
   .main-contacto .tc {
     display: flex;
     flex-wrap: wrap;
@@ -175,9 +178,8 @@ footer {
       margin-top: 5px; }
 
 .comentarios {
-  margin-left: px;
   margin-top: 50px;
-  background-color: azure; }
+}
 
 .titulo-comentarios {
   display: flex;
@@ -241,9 +243,9 @@ footer {
   margin-bottom: 15px; }
 
 .delivery .form-pedir {
-  max-width: 470px;
+  max-width: 800px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left; }
   .delivery .form-pedir textarea, .delivery .form-pedir .info-pedido {
     margin-top: 5px;
@@ -258,8 +260,20 @@ footer {
   .delivery .form-pedir .info-extra {
     height: 30px; }
 
-.delivery .opciones-pedir .boton {
-  margin-top: 10px; }
+.opciones-pedir{
+  text-align: center;
+}
+
+.sitio-pedido{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  margin: 30px;
+}
+
+ .pedidosya a img{
+  border-radius: 20px;
+}
 
 /* final pedir online */
 /* media query (730px) */
@@ -301,15 +315,44 @@ footer {
   .locales {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 60px);
-    grid-template-areas: 'boedo palermo puerto' 'sant recoleta belgrano'; }
+    grid-template-areas: 'boedo palermo puerto'
+ 'sant recoleta belgrano'; }
   .mapa {
     width: 70%;
     height: 460px; }
+
   /* Delivery */
   .form-pedir {
     max-width: 900px; }
+
+    .sitio-pedido .pedidosya{
+      transition: all 300ms ease-in-out;
+    }
+    
+    .sitio-pedido .pedidosya:hover{
+      scale: 1.1;  
+    }
+    
+    .sitio-pedido .whatsapp{
+      transition: all 300ms ease-in-out;
+    }
+    
+    .sitio-pedido .whatsapp:hover{
+      scale: 1.1;  
+    }
   /* Fin Delivery */
+
   /* Contacto */
-  .form-contacto {
-    max-width: 900px; }
-  /* Fin Contacto */ }
+  .main-contacto .form-contacto {
+    max-width: 900px;
+  }
+}
+  /* Fin Contacto */ 
+
+  /* Registrate */
+
+  .form-registro{
+    max-width: 900px;
+  }
+
+  /* Fin Registrate */
