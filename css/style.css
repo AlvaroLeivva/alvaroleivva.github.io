@@ -151,7 +151,7 @@ footer {
 /* contacto*/
 .main-contacto {
   font-size: 18px; 
-background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934), white);}
+background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 60%);}
   .main-contacto .tc {
     display: flex;
     flex-wrap: wrap;
