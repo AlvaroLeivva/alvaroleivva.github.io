@@ -204,6 +204,8 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
       border-radius: 10px;
       margin: auto; }
 
+
+
 /* final contacto */
 /* registrate */
 .titulo-registrate {
@@ -211,20 +213,22 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
   justify-content: center;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; 
+  text-align: center;}
 
 .form-registro {
   border-radius: 5px;
   background: radial-gradient(at bottom, #650616, #180a0a);
   max-width: 470px;
+  padding: 10px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left; }
-  .form-registro .registro {
+  .form-registro .registro { 
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 10px; }
+     }
     .form-registro .registro .correo {
       color: white; }
     .form-registro .registro .correo-e {
@@ -240,10 +244,10 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
   align-items: center;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 .delivery .form-pedir {
-  max-width: 800px;
+  max-width: 470px;
   margin: auto;
   margin-bottom: 20px;
   text-align: left; }
@@ -251,6 +255,8 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
     margin-top: 5px;
     width: 100%; }
   .delivery .form-pedir .direccion {
+    
+    margin: auto;
     color: white;
     border-radius: 5px;
     padding: 10px;
@@ -322,7 +328,7 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
     height: 460px; }
 
   /* Delivery */
-  .form-pedir {
+  .delivery .form-pedir {
     max-width: 900px; }
 
     .sitio-pedido .pedidosya{
@@ -346,13 +352,14 @@ background-image: linear-gradient(to top, rgba(149, 196, 196, 0.934) 0%, white 6
   .main-contacto .form-contacto {
     max-width: 900px;
   }
-}
+
   /* Fin Contacto */ 
 
   /* Registrate */
 
   .form-registro{
     max-width: 900px;
+    margin-bottom: 230px;
   }
-
+}
   /* Fin Registrate */
